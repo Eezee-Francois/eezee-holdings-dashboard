@@ -4,11 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
-use App\Http\Controllers\EezeeBatteries\ClientController;
-use App\Http\Controllers\EezeeBatteries\UpliftmentController;
+use App\Http\Controllers\EezeeHoldings\EezeeBatteries\ClientController;
+use App\Http\Controllers\EezeeHoldings\EezeeBatteries\StockCodeController;
+use App\Http\Controllers\EezeeHoldings\EezeeBatteries\UpliftmentController;
 
-use App\Http\Controllers\EezeeLogistics\TruckController;
-use App\Http\Controllers\EezeeLogistics\DriverController;
+use App\Http\Controllers\EezeeHoldings\EezeeLogistics\TruckController;
+use App\Http\Controllers\EezeeHoldings\EezeeLogistics\DriverController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +60,16 @@ Route::prefix('eezee_logistics/driver')->middleware('auth')->group(function () {
 });
 
 Route::prefix('eezee_batteries/client/upliftment')->middleware('auth')->group(function () {
+    Route::get('index', [UpliftmentController::class, 'index']);
+    Route::get('upcomming_index', [UpliftmentController::class, 'upcomming_index']);
+    Route::get('client_drop_off_index', [UpliftmentController::class, 'client_drop_off_index']);
+    Route::get('completed_index', [UpliftmentController::class, 'completed_index']);
     Route::post('store', [UpliftmentController::class, 'store'])->name('upliftment.store');
     Route::get('{id}', [UpliftmentController::class, 'show']);
+});
+
+Route::prefix('eezee_batteries/stock/stock_code')->middleware('auth')->group(function () {
+    Route::get('index', [StockCodeController::class, 'index']);
+    Route::post('{id}', [StockCodeController::class, 'store']);
+    Route::get('{id}', [StockCodeController::class, 'show']);
 });

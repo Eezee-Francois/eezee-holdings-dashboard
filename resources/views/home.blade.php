@@ -9,5 +9,8 @@
 
             </x-slot>
         </x-heading>
+        @role('Sales Rep')
+        <livewire:eezee-batteries.cost-calculator/>
+        @endrole
     </x-container>
 </x-master>

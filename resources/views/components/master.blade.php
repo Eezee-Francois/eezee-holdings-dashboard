@@ -42,7 +42,7 @@
         <div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
             <!--begin::Logo-->
             <a href="/home">
-                <img alt="Logo" src="{{ asset('/logos/grey.png') }}" class="logo-default max-h-50px" />
+                <img alt="Logo" src="{{ asset('/logos/e_logo.png') }}" class="logo-default max-h-50px" />
             </a>
             <!--end::Logo-->
 
@@ -117,7 +117,7 @@
 
                                 <!--begin::Logo-->
                                 <a href="/home">
-                                    <img alt="Logo" src="{{ asset('/logos/grey.png') }}" class="logo-sticky max-h-60px" />
+                                    <img alt="Logo" src="{{ asset('/logos/e_logo.png') }}" class="logo-sticky max-h-60px" />
                                 </a>
                                 <!--end::Logo-->
                             </div>

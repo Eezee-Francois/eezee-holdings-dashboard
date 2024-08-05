@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('upliftments', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
+            $table->integer('purchase_order_id')->nullable();
+            $table->integer('goods_received_note_id')->nullable();
+            $table->integer('supplier_invoice_id')->nullable();
+            $table->integer('final_invoice_id')->nullable();
             $table->integer('consultant_id');
             $table->string('consultant_name');
             $table->integer('client_id');
@@ -23,6 +27,8 @@ return new class extends Migration
             $table->integer('driver_id')->nullable();
             $table->integer('appointment_day_id')->nullable();
             $table->string('completed');
+            $table->string('stock_code');
+            $table->string('type');
             $table->date('date')->nullable();
             $table->time('start_time')->nullable();
             $table->time('end_time')->nullable();
@@ -33,7 +39,7 @@ return new class extends Migration
             $table->text('lng');
             $table->text('telephone_1');
             $table->text('telephone_2')->nullable();
-            $table->string('size');
+            $table->string('weight');
             $table->string('billing_month')->nullable();
             $table->timestamps();
         });

@@ -73,7 +73,7 @@
         </div>
 
         <div class="content">
-            <img src="{{ asset('/logos/grey.png') }}" alt="" height="100">
+            <img src="{{ asset('/logos/e_logo.png') }}" alt="" height="100">
             <div class="title m-b-md">
                 Eezee Holdings
             </div>
