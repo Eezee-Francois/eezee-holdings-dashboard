@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use Auth;
 
-use App\Models\EezeeLogistics\Truck;
+use App\Models\EezeeHoldings\EezeeLogistics\Truck;
 use Illuminate\Http\Request;
 
 class TruckController extends Controller

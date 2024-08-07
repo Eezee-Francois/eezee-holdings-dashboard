@@ -10,7 +10,7 @@
             </x-slot>
         </x-heading>
         @role('Sales Rep')
-        <livewire:eezee-batteries.cost-calculator/>
+        <livewire:eezee-holdings.eezee-batteries.cost-calculator/>
         @endrole
     </x-container>
 </x-master>

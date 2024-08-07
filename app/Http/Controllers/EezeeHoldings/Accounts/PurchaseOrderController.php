@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\EezeeHoldings\EezeeBatteries;
+namespace App\Http\Controllers\EezeeHoldings\Accounts;
 
-use App\Models\EezeeHoldings\EezeeLogistics\FinalInvoice;
+use App\Http\Controllers\Controller;
+
+use Auth;
+
+use App\Models\EezeeHoldings\Accounts\PurchaseOrder;
 use Illuminate\Http\Request;
 
-class FinalInvoiceController extends Controller
+class PurchaseOrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +38,7 @@ class FinalInvoiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(FinalInvoice $finalInvoice)
+    public function show(PurchaseOrder $purchaseOrder)
     {
         //
     }
@@ -42,7 +46,7 @@ class FinalInvoiceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(FinalInvoice $finalInvoice)
+    public function edit(PurchaseOrder $purchaseOrder)
     {
         //
     }
@@ -50,7 +54,7 @@ class FinalInvoiceController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, FinalInvoice $finalInvoice)
+    public function update(Request $request, PurchaseOrder $purchaseOrder)
     {
         //
     }
@@ -58,7 +62,7 @@ class FinalInvoiceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(FinalInvoice $finalInvoice)
+    public function destroy(PurchaseOrder $purchaseOrder)
     {
         //
     }

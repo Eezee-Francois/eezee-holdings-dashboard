@@ -9,6 +9,6 @@
                 <a href="/home"><span class="text-dark-50 font-weight-bold text-hover-primary" id="kt_subheader_total">Dashboard</span></a>
             </x-slot>
         </x-heading>
-        <livewire:eezee-holdings.eezee-holdings.eezee-logistics.driver.index.index/>
+        <livewire:eezee-holdings.eezee-logistics.driver.index.index/>
     </x-container>
 </x-master>

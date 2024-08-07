@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\EezeeHoldings\EezeeBatteries;
+namespace App\Http\Controllers\EezeeHoldings\Accounts;
 
-use App\Models\EezeeHoldings\EezeeLogistics\GoodsReceivedNote;
+use App\Http\Controllers\Controller;
+
+use Auth;
+
+use App\Models\EezeeHoldings\Accounts\SupplierInvoice;
 use Illuminate\Http\Request;
 
-class GoodsReceivedNoteController extends Controller
+class SupplierInvoiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +38,7 @@ class GoodsReceivedNoteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(GoodsReceivedNote $goodsReceivedNote)
+    public function show(SupplierInvoice $supplierInvoice)
     {
         //
     }
@@ -42,7 +46,7 @@ class GoodsReceivedNoteController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(GoodsReceivedNote $goodsReceivedNote)
+    public function edit(SupplierInvoice $supplierInvoice)
     {
         //
     }
@@ -50,7 +54,7 @@ class GoodsReceivedNoteController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, GoodsReceivedNote $goodsReceivedNote)
+    public function update(Request $request, SupplierInvoice $supplierInvoice)
     {
         //
     }
@@ -58,7 +62,7 @@ class GoodsReceivedNoteController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(GoodsReceivedNote $goodsReceivedNote)
+    public function destroy(SupplierInvoice $supplierInvoice)
     {
         //
     }

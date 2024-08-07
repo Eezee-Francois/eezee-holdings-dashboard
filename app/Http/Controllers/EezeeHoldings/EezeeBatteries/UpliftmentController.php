@@ -63,6 +63,7 @@ class UpliftmentController extends Controller
         $upliftment = new Upliftment();
 
             $upliftment->user_id = Auth::user()->id;
+            $upliftment->category = 'Eezee Batteries';
             $upliftment->consultant_id = $client->consultant_id;
             $upliftment->consultant_name = $client->consultant_name;
             $upliftment->client_id = $client->id;
@@ -79,6 +80,7 @@ class UpliftmentController extends Controller
             $upliftment->weight = $request->weight;
             $upliftment->type = $request->type;
             $upliftment->stock_code = $request->stock_code;
+            $upliftment->client_price = $client->price;
 
         $upliftment->save();
 

@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('final_invoices', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->integer('purchase_order_id')->nullable();
-            $table->integer('goods_received_note_id')->nullable();
-            $table->integer('supplier_invoice_id')->nullable();
+            $table->string('category');
+            $table->integer('upliftment_id');
+            $table->integer('final_invoice_unique_id')->nullable();
             $table->integer('consultant_id');
             $table->string('consultant_name');
             $table->integer('client_id');
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->string('province');
             $table->text('address');
-            $table->text('signature');
+            $table->text('signature')->nullable();
             $table->string('stock_code');
             $table->string('completed');
             $table->timestamps();

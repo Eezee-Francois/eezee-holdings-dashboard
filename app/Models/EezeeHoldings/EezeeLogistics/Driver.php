@@ -11,7 +11,7 @@ class Driver extends Model
 
     public function trucks()
     {
-        return $this->belongsToMany('App\Models\EezeeLogistics\Truck', 'truck_drivers', 'driver_id', 'truck_id');
+        return $this->belongsToMany('App\Models\EezeeHoldings\EezeeLogistics\Truck', 'truck_drivers', 'driver_id', 'truck_id');
     }
 
     /**

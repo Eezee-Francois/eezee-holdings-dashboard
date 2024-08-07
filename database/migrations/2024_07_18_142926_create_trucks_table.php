@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('user_id');
             $table->string('name');
             $table->string('registration');
-            $table->string('size');
+            $table->string('weight');
             $table->string('active');
             $table->timestamps();
         });

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\EezeeLogistics;
+namespace App\Models\EezeeHoldings\EezeeLogistics;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,7 +11,7 @@ class Truck extends Model
 
     public function drivers()
     {
-        return $this->belongsToMany('App\Models\EezeeLogistics\Driver', 'truck_drivers', 'truck_id', 'driver_id');
+        return $this->belongsToMany('App\Models\EezeeHoldings\EezeeLogistics\Driver', 'truck_drivers', 'truck_id', 'driver_id');
     }
 
     /**

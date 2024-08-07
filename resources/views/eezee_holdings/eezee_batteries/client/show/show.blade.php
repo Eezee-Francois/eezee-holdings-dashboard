@@ -46,7 +46,7 @@
             <x-slot name="toolbar">
                 
             </x-slot>
-            <livewire:eezee-batteries.client.show.details :client="$client" />
+            <livewire:eezee-holdings.eezee-batteries.client.show.details :client="$client" />
         </x-card>
 
         <!-- Client Address -->

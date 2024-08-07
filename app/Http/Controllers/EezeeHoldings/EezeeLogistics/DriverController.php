@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 
 use Auth;
 
-use App\Models\EezeeLogistics\Truck;
-use App\Models\EezeeLogistics\Driver;
+use App\Models\EezeeHoldings\EezeeLogistics\Truck;
+use App\Models\EezeeHoldings\EezeeLogistics\Driver;
 
 use Illuminate\Http\Request;
 
@@ -51,6 +51,8 @@ class DriverController extends Controller
             $driver->first_name = $request->first_name;
             $driver->last_name = $request->last_name;
             $driver->drivers_license = '$request->drivers_license';
+            $driver->lat = -26.19;
+            $driver->lng = 28.31;
 
             $driver->active = 'Yes';
 
